@@ -1,0 +1,26 @@
+{
+  "name": "nodealura",
+  "version": "1.0.0",
+  "description": "curso alura",
+  "main": "produto.js",
+  "scripts": {
+    "test": "set NODE_ENV='test' && node ./node_modules/mocha/bin/mocha",
+    "start": "nodemon app.js"
+  },
+  "author": "paulosergio",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-load": "^1.1.16",
+    "express-validator": "^6.12.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.13",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.1",
+    "supertest": "^6.1.3"
+  }
+}

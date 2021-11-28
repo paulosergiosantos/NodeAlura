@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Lista de Produtos</title>
+    </head>
+    <body>
+        <div>
+            <table border="1" style="border-collapse: collapse;">
+                <tr style="background-color: lightgrey;">
+                    <th>ID</th>
+                    <th>Titulo</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+                <% for(let i=0; i < livros.length; i++) { const { id, titulo, descricao, preco } = livros[i]; %>
+                    <tr>
+                        <td><%= id %></td>
+                        <td><%= titulo %></td>
+                        <td><%= descricao %></td>
+                        <td><%= preco %></td>
+                    </tr>
+                <% }%>
+            </table>
+        </div>
+    </body>
+</html>

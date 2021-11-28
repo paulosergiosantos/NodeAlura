@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <form action="/promocoes" method="POST">
+            <div>
+                <label>Promoção: </label>
+                <input type="text" name="mensagem" />
+            </div>
+
+            <div>
+                <label>Livros: </label>
+                <select name="livro[id]">
+                    <% for(let i = 0; i < lista.length; i++) { const { id, titulo } = lista[i]; %>
+                        <option value="<%=id%>"><%=titulo%></option>
+                    <% } %>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" value="Cadastrar Promoção" /> 
+            </duiv>
+        </form>
+    </body>
+</html>
